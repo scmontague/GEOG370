@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>World Projections Project</h1>
+    
+    <p>Sarah Montague 2/2/22</p>
+
+    <p>For this assignment I used data from natural earth data and used QGIS to project it in different ways. I did this by using the Indicatrix Mapper plug in. I watched the tutorial videos to learn how to install the plugin and use it to project caps onto my maps to see how the different projections alter shape, distance, and area.  </p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>This map is a cylincrical projection. Around the equator there is very little distortion however to the North and South the projection stretches horizontally and larger in general.</h3>
+    <a href="./images/WGS84.png">
+    <img src="./images/WGS84.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection 54034</h2>
+    <h3>This is a cylindrical projection. There is very little distortion around the Prime Meridian and equator, but there is more farther out.   </h3>
+    <a href="./images/World Aitoff.png">
+    <img src="./images/World Aitoff.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo Mecator 3857 Projection</h2>
+    <h3>This is a cylindrical projection. There is very little distortion at and around the equator. Towards the North and South the area of the land masses is distorted to be larger, more so in the South. </h3>
+    <a href="./images/Pseudo Mercator.png">
+    <img src="./images/Pseudo Mercator.png" alt="Pseudo" width='500px'>
+    </a>
+    <h2>Sphere Winkle I 53081 Projection</h2>
+    <h3>This is a cylincrical projection. There is almost no distortion at the equator and Prime Meridian. The "corners" of the map are the most distorted.  </h3>
+    <a href="./images/SphereWinkleI.png">
+    <img src="./images/SphereWinkleI.png" alt="Winkle" width='500px'>
+    </a>
+    <h2>World Cylindrical Area 54034 Projection</h2>
+    <h3>This is a cylindrical proection. There is almost no distortion at and around the equator, but at the North and South there is a lot of distortion regarding shape and distance. </h3>
+    <a href="./images/WorldCylindricalEqualArea.png">
+    <img src="./images/WorldCylindricalEqualArea.png" alt="Cylindrical" width='500px'>
+    </a>
+    <h2>World Equidistant Conic 54027 Projection</h2>
+    <h3>This is a conic projection. The south pole is in the center of the map and as you look further from the center the shape and size becomes more and more distorted. The map does not form a full circle because it is a conic projection, not Azimuthial/Planar. </h3>
+    <a href="./images/WorldEquidistantConic.png">
+    <img src="./images/WorldEquidistantConic.png" alt="Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthial Equidistant 102016 Projection</h2>
+    <h3>This is a Azimuthial projection. It is very similar to the World Equidistant Conic except the center of the map is at the North Pole instead of the South Pole. This map also forms a complete cirlce.</h3>
+    <a href="./images/NorthPole.png">
+    <img src="./images/NorthPole.png" alt="NorthPole" width='500px'>
+    </a>
+    <h2>Sphere Loximuthal 53023 Projection</h2>
+    <h3>This is a cylindrical projection. Across the map there is not much distortion, but at the North and South there is distortion making area larger and distorting shape. The distortion is more prominent in the South. This seems to be one of the least distorted projections in this project.</h3>
+    <a href="./images/SphereLoxmuthial.png">
+    <img src="./images/SphereLoxmuthial.png" alt="Loximuthal" width='500px'>
+    </a>
+    <h2>Sphere Craster Parabolic 53046 Projection</h2>
+    <h3>This is a cylindrical projection. The only place this map is not distorted is along the equator. The rest of the map is heavily distorted in size and shape. This distortion becomes stronger closer to North and South.</h3>
+    <a href="./images/spherecrasterparabolic.png">
+    <img src="./images/spherecrasterparabolic.png" alt="Craster" width='500px'>
+    </a>
+   
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
