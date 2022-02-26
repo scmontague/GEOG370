@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1> Homework 6, part 2: Census data ratios and categories  </h1>
+    
+    <h3 style="color:rgb(0, 0, 0)"> In this project I categorized data in the form of a ratio three different ways in QGIS. I categorized it by Natural Breaks (Jenks), Equal Count (quantile), and by Pretty Breaks. The ratio I used was the number of households per 1k households that recieve food stamps and/or SNAP. I used this ratio because it helps account for the different populations of the counties. The counties all have different numbers of households and with a higher population likely comes a higher number of households on food stamps/SNAP. Using a ratio accounts for different populations having an impact on understanding on how much different county's populations are allocated food stamps/SNAP.    </p>
+    
+    <h2>Natural Breaks</h2>
+    <h3>This categorization has a fairly even distribution in each category. A pro of this categorization is that it groups data together that is similar so you can see where data tends to pool. A con of this categorization is that it does not account for the data being evenly distributed among the categories.  </h3>
+    <a href="./natural_breaks.png">
+    <img src="./natural_breaks.png" alt="natural_breaks" width='500px'>
+    </a>
+    <h2>Equal Count (Quantile)</h2>
+    <h3>This categorization divides data into categories that all have an equal number of data points in them. A con of this categorization is that some categories have larger ranges and some have smaller ones, meaning that the categories are not as specific. A pro of this categorization is that the map is that it prevents the possibilty of a lot of data points being in one category and a map being moslty one category.</h3>
+    <a href="./equal_count_quantile.png">
+    <img src="./equal_count_quantile.png" alt="quantile" width='500px'>
+    </a>
+    <h2>Pretty Breaks</h2>
+    <h3>This categorization divides data into categories that have almost equal and "pretty" intervals. This could make the map more digestable because the different colors represnt intervals that are numbers we can easily imagine. I did not alter the intervals that QGIS suggested so I could fairly compare the categorizations. This categorization only created 4 categories, while the others created 5. This means that the categories are less specific. There is no consideration for the distribution of data. </h3>
+    <a href="./pretty_breaks.png">
+    <img src="./pretty_breaks.png" alt="Pretty_Breaks" width='500px'>
+    </a>
+    
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://github.com/scmontague/GEOG370/blob/main/homework6/ACSST5Y2019.S2201_data_with_overlays_2022-02-23T150358%20copy.csv"> Census Data </a>
+</body>
+</html>
