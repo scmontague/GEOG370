@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Homework 8</title>
+</head>
+<body>
+<h1>Homework 8: Vector Geospatial Analysis for Floodplains and Schools withing 5 km of Municipal Solid Waste Landfills</h1>
+
+<h2>Research Question</h2>
+<p>This project uses vector geoprocessing analysis to answer the following real-world question: How many public schools are within 5 kilometers of a municipal solid waste landfill?</p>
+
+<!-- Pre-work Discussion -->
+<h2>Background</h2>
+<p>A study found that living within 5 kilometers of a MSW landfill correlates with a higher change of dying from lung cancer and other respiratory disease. This is believed to be because of increased amounts of H2S in the air.</p><br>
+<!-- The line of code below hyperlinks to your map and embeds the image in the webpage -->
+
+
+<!-- Discussion of methods and presentation of results -->
+<h2>Making the Map</h2>
+<p>I got data for all landfills in North Carolina and filtered the data to only display landfills that contained municipal solid waste and that were in Mecklenburg County. I made a 5000 meter buffer around these points. I then added data for public schools and the floodplains in Mecklenburg county and interesected them with the buffer I made. </p><br>
+<!-- The line of code below hyperlinks to your map and embeds the image in the webpage -->
+<a href="./hw8.png"><img src="./hw8.png" alt="my map" width='800px'></a>
+
+<!-- Data files on GitHub -->
+<h2>Output Files</h2>
+    <a href="https://github.com/adriennehall8/GISUNC/blob/main/08GeospatialAnalysis/Data/Buffer.geojson"> Perimeter (Buffer)</a><br>     
+    <a href="https://github.com/adriennehall8/GISUNC/blob/main/08GeospatialAnalysis/Data/Well_Sampling_Sites.geojson"> Well Sampling Sites (Intersection of Wells with Buffer)</a><br>
+    <a href="./Data/UniqueValues.rtf"> Unique Sample Sites (Unique Value Analysis of Well Sampling Sites, Count = 35)</a><br>
+    <a href="https://github.com/adriennehall8/GISUNC/blob/main/08GeospatialAnalysis/Data/HuntersvilleSpillLocation.geojson"> Huntersville Spill Location </a><br>
+    
+    
+<!-- References -->
+<h2>Sources</h2>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5005946/"> Morbidity and mortality of people who live close to municipal waste landfills: a multisite cohort study</a><br>    
+    <a href="http://maps.co.mecklenburg.nc.us/openmapping/data.html?search=flood"> NC Floodplain Data</a><br>
+    <a href="https://www.nconemap.gov/datasets/ncdenr::permitted-solid-waste-landfills/explore?location=35.101280%2C-80.890797%2C9.00"> NC Permitted Solid Waste Landfills Data </a><br>
+    <a href="hhttps://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"> 2021 U.S. Census TIGER/Line Shapefiles</a><br> 
+</body>
+</html>
